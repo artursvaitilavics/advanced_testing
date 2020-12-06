@@ -2,6 +2,9 @@ package com.swampus.excercise.task;
 
 import com.swampus.excercise.not.modify.UCSMPlatformConnector;
 
+/**
+ * Investigate and create test
+ */
 public class LeadTask03 {
     private UCSMPlatformConnector ucsmPlatformConnector;
 
