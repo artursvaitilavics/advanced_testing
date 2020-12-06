@@ -1,0 +1,15 @@
+1. What is unit test in java ?
+2. Why we might need tests in our program ?
+3. What is deference between assertEquals(true, someBooleanVar) and assertTrue(someBooleanVar)
+4. What library we need to make unit tests ?
+5. What is maven command to execute unit tests ?
+6. What is @Before ?
+7. What is proxy pattern ?
+8. What is mock ? Why we need mocks ?
+9. Can we mock static class ?
+10. What is spy ?
+11. What is Whitebox ?
+12. What is test coverage ?
+13. What modifier we have to use for method to be accessible in tests ?
+14. Can we use private methods in test class ?
+15. What is scope ? What is scope test ?
