@@ -1,15 +1,17 @@
 package com.swampus.excercise.not.modify;
 
-public class UCSMPlatformConnector {
-    public UCSMPlatformConnector() {
+public class UCSMPlatformConnectorProxy extends UCSMPlatformConnector {
+    public UCSMPlatformConnectorProxy() {
     }
 
+    @Override
     public String getHeader() {
-        throw new RuntimeException("Connection to host: udtm.tho4234.claster.com is not allowed from localhost");
-
-//        return "[GHAHBSGYB^&F%&A(NBOBA^%FGY(UIASD]";
+//        return super.getHeader();
+        return "[GHAHBSGYB^&F%&A(NBOBA^%FGY(UIASD]";
     }
 
+
+    @Override
     public String getContent(String key) {
         if(key.equals("A")){
             return "[6882763872387872938972368236872348792436823623862348768234]";
@@ -22,5 +24,4 @@ public class UCSMPlatformConnector {
         }
         throw new RuntimeException("Unknown host");
     }
-
 }

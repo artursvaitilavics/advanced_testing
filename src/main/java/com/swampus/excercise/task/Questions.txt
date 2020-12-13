@@ -8,8 +8,33 @@
 8. What is mock ? Why we need mocks ?
 9. Can we mock static class ?
 10. What is spy ?
-11. What is Whitebox ?
+11. What is White-box ?
 12. What is test coverage ?
 13. What modifier we have to use for method to be accessible in tests ?
 14. Can we use private methods in test class ?
 15. What is scope ? What is scope test ?
+
+
+Atbildes:
+
+1.  Test class, kas testee kadu klasi.
+2.  Test for errors, kluudas. Lai redzetu vai tests nenojauc kadu kopiigu team work fiichu. Skatoties uz UnitTest var
+        labak redzet ko konkretas clases dara.
+3.  assertEquals parbauda vai divi parametri sakriit, assertTrue parbauda vai bool atgriezh True.
+4.  Junit.
+5.
+6.  Tiek palaists pirms jebkura testa.
+7.  Klase kura extendo citu klasi vai interface, override visas metodes un atstaa tas tuksas.
+8.  Palidz automatiski nofeikot kadu klasi, datu saneemejus. Moki der, lai nebutu
+        jasledzas klat istiem datiem.
+9.  Easy mock un power mock var mockeet static class, bet klasiski to nevar.
+10. Spy reals objekts, kas strada ka moks, tikai vari izveleties kuras metodes
+        overrideet, un kuras izmantos isto metodi.  Pashizdomats teksts: "Nav gluzhi mock, jo taka streamo
+        parkjer pieprasijumus."
+11. White box, lauj pieklut klases laukiem. settot, getot. Set Get inernal states. TESTAA
+12. ja nav testu, tad test coverage ir 0%. ja pusi no metodem notestee, tad test
+        coverage ir 50%. Normali itka butu jabut vismaz 80% test coverage. Bankai butu jabut
+        test coverage tuvu 100%.
+13. public, bez modifier metdoeir pieejama packagee, un testaa... bet savadak protected nedarbotos testaa
+14. nope, jabut public test metodeem test clasee
+15. @Test bus pieejams tikai test pakotnees. Testiem scope = tests netiek ieklauts jar failaa.
